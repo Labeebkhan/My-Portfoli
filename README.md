@@ -68,7 +68,7 @@ To run this project locally:
 
 ## 📬 Contact
 For inquiries, reach out via:
-- Email: labeebkhan@gmail.com
+- Email: labeebkhan7766@gmail.com
 - LinkedIn: https://pk.linkedin.com/in/labeeb-khan-57320622a?trk=people-guest_people_search-card
 - GitHub: https://github.com/Labeebkhan
 
