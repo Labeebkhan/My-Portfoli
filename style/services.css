@@ -1,0 +1,118 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Reset for proper scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.services {
+    width: 100%;
+    min-height: 100vh;
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+    position: relative;
+    scroll-snap-align: start; /*Snap to start*/
+}
+
+/* Remove any fixed positioning from other sections */
+.about {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.services h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.service-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+.service-item {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Icon styling */
+.service-item i {
+    font-size: 2.5rem;
+    color: #ff6347;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.service-item h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.service-item p {
+    color: #666;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .services {
+        padding: 60px 0;
+    }
+
+    .services h1 {
+        font-size: 2rem;
+    }
+
+    .service-container {
+        grid-template-columns: 1fr;
+        width: 95%;
+    }
+
+    .service-item {
+        padding: 25px;
+    }
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+    .service-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .service-item {
+        flex: 0 1 calc(33.333% - 30px);
+    }
+}

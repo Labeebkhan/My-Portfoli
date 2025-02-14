@@ -50,7 +50,7 @@ canvas#stars {
     align-items: center; /* Center the content vertically */
     height: 100vh; /* Ensure the main-home div takes the full height of the viewport */
     padding: 0 20px; /* Add padding for smaller screens */
-    scroll-snap-align: start; /* Snap to start */
+    scroll-snap-align: start; /*Snap to start */
 }
 
 .left {

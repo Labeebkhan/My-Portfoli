@@ -7,12 +7,16 @@
     <link rel="stylesheet" href="style/home.css">
     <link rel="stylesheet" href="style/navbar.css">
     <link rel="stylesheet" href="style/about.css">
+    <link rel="stylesheet" href="style/services.css">
+    <link rel="stylesheet" href="style/experience.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Lora:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typewriter-effect@2.18.0/dist/core.js"></script>
 </head>
 <body>
     <canvas id="stars"></canvas>
+    <!-- Navbar section -->
     <div class="navbar">
         <div class="logo">
             <h1>Labeeb Khan</h1>
@@ -21,8 +25,9 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
         <div class="menu-icon" onclick="toggleMenu()">
@@ -31,6 +36,8 @@
             <span></span>
         </div>
     </div>
+
+    <!-- Home section -->
     <div class="main-home" id="home">
         <div class="left">
             <h1>Hi, I am Labeeb Khan</h1>
@@ -41,13 +48,14 @@
             <img src="image/profile.webp" alt="Hero Image">
         </div>
     </div>
+
+    <!-- About section -->
     <div class="about" id="about">
         <div class="left-side-about" data-aos="fade-right" data-aos-duration="1000">
             <h1 class="animateh1">About Me</h1>
             <p>
                 I am a Software Engineer with 3+ years of experience, specializing in full-stack development and building scalable, high-performance applications. I have successfully delivered 20+ projects, creating innovative digital solutions. Passionate about clean code, problem-solving, and modern web technologies, I continuously explore new trends to enhance user experiences. Let's build something great together!
             </p>
-    
             <div class="stats-container">
                 <div class="Experience" data-aos="zoom-in" data-aos-duration="1000">
                     <i class="fa-solid fa-medal"></i>
@@ -61,12 +69,171 @@
                 </div>
             </div>
         </div>
-    
         <div class="right-side-about" data-aos="fade-left" data-aos-duration="1000">
             <img src="image/aboutme.jpg" alt="engineer on desktop" class="about-img">
         </div>
     </div>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Experience Section -->
+    <div class="container">
+        <div class="card">
+            <h2>Frontend Development</h2>
+            <div class="skill">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                    <p class='skillset'>HTML</p>
+                    <p class="level">Advanced</p>
+                </div>
+            </div>
+            <div class="skill">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                    <p class='skillset'>Bootstrap</p>
+                    <p class="level">Intermediate</p>
+                </div>
+            </div>
+            <div class="skill">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                    <p class='skillset'>CSS/SCSS</p>
+                    <p class="level">Advanced</p>
+                </div>
+            </div>
+            <div class="skill">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                    <p class='skillset'>Git</p>
+                    <p class="level">Advanced</p>
+                </div>
+            </div>
+            <div class="skill">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                    <p class='skillset'>Javascript</p>
+                    <p class="level">Advanced</p>
+                </div>
+            </div>
+            <div class="skill">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                    <p class='skillset'>React</p>
+                    <p class="level">Advanced</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Mobile Development</h2>
+            <div class="skill">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                    <p class='skillset'>DART</p>
+                    <p class="level">Advanced</p>
+                </div>
+            </div>
+            <div class="skill">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                    <p class='skillset'>FLUTTER</p>
+                    <p class="level">Intermediate</p>
+                </div>
+            </div>
+            <div class="skill">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                    <p class='skillset'>Firebase</p>
+                    <p class="level">Advanced</p>
+                </div>
+            </div>
+            <div class="skill">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                    <p class='skillset'>Git</p>
+                    <p class="level">Advanced</p>
+                </div>
+            </div>
+            <div class="skill">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                    <p class='skillset'>Javascript</p>
+                    <p class="level">Advanced</p>
+                </div>
+            </div>
+            <div class="skill">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                    <p class='skillset'>Typescript</p>
+                    <p class="level">Advanced</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Backend Development</h2>
+            <div class="skill">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                    <p class='skillset'>Node JS</p>
+                    <p class="level">Advanced</p>
+                </div>
+            </div>
+            <div class="skill">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                    <p class='skillset'>PHP</p>
+                    <p class="level">Intermediate</p>
+                </div>
+            </div>
+            <div class="skill">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                    <p class='skillset'>Python</p>
+                    <p class="level">Advanced</p>
+                </div>
+            </div>
+            <div class="skill">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                    <p class='skillset'>Firebase</p>
+                    <p class="level">Advanced</p>
+                </div>
+            </div>
+            <div class="skill">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                    <p class='skillset'>MySQL</p>
+                    <p class="level">Advanced</p>
+                </div>
+            </div>
+            <div class="skill">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                    <p class='skillset'>Mongo DB</p>
+                    <p class="level">Advanced</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services section -->
+    <section class="services" id="services">
+        <h1>My Services</h1>
+        <div class="service-container">
+            <div class="service-item">
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Building responsive and modern websites.</p>
+            </div>
+            <div class="service-item">
+                <i class="fa-solid fa-mobile"></i>
+                <h2>App Development</h2>
+                <p>Creating high-performance mobile applications.</p>
+            </div>
+            <div class="service-item">
+                <i class="fa-solid fa-brain"></i>
+                <h2>ML/AI Services</h2>
+                <p>Using My Experience to Provide AI Services.</p>
+            </div>
+        </div>
+    </section>
     <script src="script/background.js"></script>
     <script src="script/typewriter.js"></script>
     <script src="script/toggleMenu.js"></script>
