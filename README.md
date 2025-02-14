@@ -31,7 +31,7 @@ it features a smooth UI, animations, and a responsive design.
 ---
 
 ## 🔧 Technologies Used
-- **Frontend:** HTML, CSS, JavaScript
+- **Frontend:** HTML, CSS, JavaScript,ThreeJS
 - **Styling:** CSS Flexbox 
 - **Animations:** Hover Effects
 - **Icons:** FontAwesome
