@@ -1,0 +1,178 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh; /* Ensure the about section takes at least the full height of the viewport */
+    background-color: white; /* Set a white background color */
+    padding: 20px; /* Add padding to the about section */
+    scroll-snap-align: start; /* Snap to start */
+}
+
+.left-side-about {
+    width: 45%; /* Adjust width to add space between sub-divs */
+    padding: 20px;
+    margin-left: 50px;
+    color: black; /* Change text color to black for better readability */
+    font-family: 'Arial', sans-serif;
+}
+
+.left-side-about p {
+    font-family: 'Poppins', sans-serif;  /* Change 'Poppins' to any preferred font */
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.left-side-about h1 {
+    animation: elegantFlash 3s infinite; /* Apply the elegant animation */
+    font-size: 36px; /* Default font size */
+    text-align: left; /* Default text alignment */
+}
+
+/* Experience & Support Box Styling */
+.stats-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.Experience, .Support {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0D0D22; /* Dark Background */
+    width: 200px; /* Box width */
+    height: 120px; /* Box height */
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    color: white; /* Text color */
+}
+
+/* Hover Effect */
+.Experience:hover, .Support:hover {
+    transform: scale(1.05);
+}
+
+/* Icon Styling */
+.Experience i, .Support i {
+    font-size: 32px;
+    color: #ff6347;
+    margin-bottom: 8px;
+}
+
+/* Text Styling */
+.Experience h2, .Support h2 {
+    font-size: 18px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.Experience p, .Support p {
+    font-size: 14px;
+    color: #c4c4c4;
+}
+
+.right-side-about {
+    width: 45%; /* Adjust width to add space between sub-divs */
+    padding: 20px;
+    margin-right: 50px;
+    color: black; /* Change text color to black for better readability */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+}
+
+.about-img {
+    width: 100%; /* Adjust width to fit the container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 600px; /* Set a maximum width */
+    min-width: 350px; /* Set a minimum width */
+    border-radius: 10px;
+}
+
+/* Define the keyframes for the elegant animation */
+@keyframes elegantFlash {
+    0%, 100% {
+        color: black;
+        transform: scale(1);
+    }
+    50% {
+        color: #ff6347; /* Tomato color */
+        transform: scale(1.05);
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .left-side-about, .right-side-about {
+        width: 100%;
+        margin: 20px 0;
+        padding: 0;
+        text-align: center; /* Center text for smaller screens */
+    }
+
+    .left-side-about h1 {
+        font-size: 32px; /* Adjust font size for smaller screens */
+        text-align: center; /* Center text for smaller screens */
+    }
+
+    .stats-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Experience, .Support {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .left-side-about h1 {
+        font-size: 28px; /* Adjust font size for smaller screens */
+        text-align: center; /* Center text for smaller screens */
+    }
+
+    .Experience i, .Support i {
+        font-size: 28px;
+    }
+
+    .Experience h2, .Support h2 {
+        font-size: 16px;
+    }
+
+    .Experience p, .Support p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .left-side-about h1 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+        text-align: center; /* Center text for smaller screens */
+    }
+
+    .Experience i, .Support i {
+        font-size: 24px;
+    }
+
+    .Experience h2, .Support h2 {
+        font-size: 14px;
+    }
+
+    .Experience p, .Support p {
+        font-size: 10px;
+    }
+}

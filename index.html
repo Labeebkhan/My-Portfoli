@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labeeb Khan</title>
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Lora:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typewriter-effect@2.18.0/dist/core.js"></script>
+</head>
+<body>
+    <canvas id="stars"></canvas>
+    <div class="navbar">
+        <div class="logo">
+            <h1>Labeeb Khan</h1>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="main-home" id="home">
+        <div class="left">
+            <h1>Hi, I am Labeeb Khan</h1>
+            <p id="typewriter">Software Engineer</p>
+            <button>Get Started</button>
+        </div>
+        <div class="right-image-side">
+            <img src="image/profile.webp" alt="Hero Image">
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="left-side-about" data-aos="fade-right" data-aos-duration="1000">
+            <h1 class="animateh1">About Me</h1>
+            <p>
+                I am a Software Engineer with 3+ years of experience, specializing in full-stack development and building scalable, high-performance applications. I have successfully delivered 20+ projects, creating innovative digital solutions. Passionate about clean code, problem-solving, and modern web technologies, I continuously explore new trends to enhance user experiences. Let's build something great together!
+            </p>
+    
+            <div class="stats-container">
+                <div class="Experience" data-aos="zoom-in" data-aos-duration="1000">
+                    <i class="fa-solid fa-medal"></i>
+                    <h2>Experience</h2>
+                    <p>3.5 Years Working</p>
+                </div>
+                <div class="Support" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                    <i class="fa-solid fa-headset"></i>
+                    <h2>Support</h2>
+                    <p>Online 24/7</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="right-side-about" data-aos="fade-left" data-aos-duration="1000">
+            <img src="image/aboutme.jpg" alt="engineer on desktop" class="about-img">
+        </div>
+    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="script/background.js"></script>
+    <script src="script/typewriter.js"></script>
+    <script src="script/toggleMenu.js"></script>
+</body>
+</html>

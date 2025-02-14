@@ -1,0 +1,145 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    font-family: Arial, sans-serif;
+    scroll-snap-type: y mandatory; /* Enable scroll snap */
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+body {
+    background-color: #000; /* Set a dark background color */
+}
+
+canvas#stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the canvas behind other elements */
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.main-home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center the content vertically */
+    height: 100vh; /* Ensure the main-home div takes the full height of the viewport */
+    padding: 0 20px; /* Add padding for smaller screens */
+    scroll-snap-align: start; /* Snap to start */
+}
+
+.left {
+    width: 50%;
+    padding: 20px;
+    margin-left: 50px;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.left h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    animation: fadeIn 1s ease-out; /* Synchronize the animation */
+}
+
+.left p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-out; /* Synchronize the animation */
+}
+
+.left button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #ff6347;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    animation: fadeIn 1s ease-out; /* Synchronize the animation */
+}
+
+.left button:hover {
+    background-color: #ff4500;
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.right-image-side {
+    animation: slideInFromRight 1s ease-out; /* Apply the right slide-in animation */
+}
+
+.right-image-side img {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    max-height: 550px;
+    margin-right: 50px;
+    object-fit: cover; /* This will ensure the image covers the area without distortion */
+    border-radius: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .main-home {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        margin-top: 80px; /* Add margin between navbar and home screen content */
+    }
+
+    .left {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        animation: slideInFromLeft 1s ease-out; /* Apply the left slide-in animation */
+    }
+
+    .right-image-side {
+        width: 100%;
+        margin-top: 20px;
+        animation: slideInFromRight 1s ease-out; /* Apply the right slide-in animation */
+        display: flex;
+        justify-content: center;
+    }
+
+    .right-image-side img {
+        margin-right: 0;
+        max-width: 80%; /* Adjust the max-width for smaller screens */
+        max-height: 80%; /* Adjust the max-height for smaller screens */
+    }
+}
