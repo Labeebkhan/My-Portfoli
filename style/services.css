@@ -22,7 +22,7 @@ body {
     padding: 80px 20px;
     background-color: #f9f9f9;
     position: relative;
-    scroll-snap-align: start; /*Snap to start*/
+    /* scroll-snap-align: start; Snap to start */
 }
 
 /* Remove any fixed positioning from other sections */

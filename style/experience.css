@@ -6,7 +6,7 @@
     align-items: center;
     min-height: 100vh;
     gap: 20px;
-    scroll-snap-align: start; /*Snap to start*/
+    /* scroll-snap-align: start; Snap to start */
 }
 .card {
     background-color: #2d3748;
@@ -38,4 +38,11 @@
 }
 .skillset{
     color: white;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        margin: 35px 0px;
+    }
+    
 }

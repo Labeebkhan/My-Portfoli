@@ -5,7 +5,7 @@
     min-height: 100vh; /* Ensure the about section takes at least the full height of the viewport */
     background-color: white; /* Set a white background color */
     padding: 20px; /* Add padding to the about section */
-    scroll-snap-align: start; /*Snap to start */
+    /* scroll-snap-align: start; Snap to start */
 }
 
 .left-side-about {
