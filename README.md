@@ -4,6 +4,7 @@ Welcome to my **Personal Portfolio** repository! This project showcases my skill
 and projects in an elegant and interactive way.Built with modern technologies, 
 it features a smooth UI, animations, and a responsive design.
 
+DEMO: https://labeebkhan.netlify.app/
 
 ## 📌 Sections
 
