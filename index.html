@@ -4,15 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Labeeb Khan</title>
+    
+    <!-- Updated favicon links -->
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
+    
     <link rel="stylesheet" href="style/home.css">
     <link rel="stylesheet" href="style/navbar.css">
     <link rel="stylesheet" href="style/about.css">
     <link rel="stylesheet" href="style/services.css">
     <link rel="stylesheet" href="style/experience.css">
+    <link rel="stylesheet" href="style/contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Lora:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typewriter-effect@2.18.0/dist/core.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
+        })();
+    </script>
 </head>
 <body>
     <canvas id="stars"></canvas>
@@ -45,7 +60,7 @@
             <button>Get Started</button>
         </div>
         <div class="right-image-side">
-            <img src="image/profile.webp" alt="Hero Image">
+            <img src="image/profile.jpg" alt="Hero Image">
         </div>
     </div>
 
@@ -234,8 +249,48 @@
             </div>
         </div>
     </section>
+
+    <section class="contact" id="contact">
+        <h1>Contact Me</h1>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div class="contact-details">
+                        <h3>Call Me</h3>
+                        <p>+92 345-7766748</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div class="contact-details">
+                        <h3>Email</h3>
+                        <p>labeebkhan7766@email.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-location-dot"></i>
+                    <div class="contact-details">
+                        <h3>Location</h3>
+                        <p>Faisalabad, Pakistan</p>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form" novalidate>
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Full Name" required minlength="3">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <input type="text" name="subject" placeholder="Subject" required minlength="3">
+                <textarea name="message" placeholder="Your Message" required minlength="10"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
     <script src="script/background.js"></script>
     <script src="script/typewriter.js"></script>
     <script src="script/toggleMenu.js"></script>
+    <script src="script/contact.js"></script>
 </body>
 </html>
